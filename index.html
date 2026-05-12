@@ -577,7 +577,7 @@
   const TOTAL = 7;
   const NAMES = ['','Установка','Google Drive','Коллаж','Перевод','Скилл','GitHub','Применение'];
   // Вставьте URL вашего Google Apps Script после деплоя:
-  const WEBHOOK_URL = '';
+  const WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbz_xgvesUxJC2LEQz4v1Og2RjWemDhEAKIH9099CqNIv5yl5a21h4gZwhWcF2pGd-re2g/exec';
 
   function load() { try { return JSON.parse(localStorage.getItem(KEY)||'{}'); } catch(e){ return {}; } }
   function save(s){ localStorage.setItem(KEY, JSON.stringify(s)); }
