@@ -338,14 +338,14 @@
       <div class="ldone-badge" id="status-4">✓ Готово</div>
     </div>
     <div class="intro">
-      Codex умеет <strong>читать текст на изображениях и пересобирать их с переводом</strong>. В этом уроке он не просто переведёт подписи — а воссоздаст каждое изображение <strong>в том же дизайне</strong>, но уже с английским текстом. Полезно для экспортных материалов, международных презентаций и соцсетей.
+      Codex умеет <strong>читать текст на изображениях и пересобирать их с переводом</strong>. В этом уроке он воссоздаст каждое изображение <strong>в том же дизайне</strong>, заменив английский текст на русский — без следов замены, без искажения композиции и стиля.
     </div>
     <div class="steps">
       <div class="step">
         <div class="snum">1</div>
         <div class="sbody">
           <div class="stitle">Воспользуйтесь готовой папкой с картинками</div>
-          <div class="sdesc">Мы подготовили папку с изображениями с русскими подписями:</div>
+          <div class="sdesc">Мы подготовили папку с изображениями с английскими подписями:</div>
           <div style="margin-top:9px"><a href="https://drive.google.com/drive/folders/1WVu0gh_uAPocZS1UKirfnNJBdyzRu3h7?usp=sharing" target="_blank" style="color:#38bdf8;font-size:12px;word-break:break-all;text-decoration:none">https://drive.google.com/drive/folders/1WVu0gh_uAPocZS1UKirfnNJBdyzRu3h7?usp=sharing</a></div>
         </div>
       </div>
@@ -354,15 +354,18 @@
         <div class="sbody">
           <div class="stitle">Поставьте задачу Codex</div>
           <div class="sdesc">Скопируйте запрос целиком и отправьте в Codex:</div>
-          <code class="code">Возьми все картинки из папки https://drive.google.com/drive/folders/1WVu0gh_uAPocZS1UKirfnNJBdyzRu3h7?usp=sharing
+          <code class="code">Переведи текст на всех изображениях из папки Google Drive с английского на русский: https://drive.google.com/drive/folders/1WVu0gh_uAPocZS1UKirfnNJBdyzRu3h7?usp=sharing
 
 Для каждого изображения:
-1. Прочитай весь русский текст на картинке
-2. Переведи его на английский язык — точно и профессионально
-3. Воссоздай изображение в точно таком же дизайне: сохрани шрифт, цвет, размер, расположение всех элементов — только текст замени на английский перевод
-4. Сохрани каждый результат локально с суффиксом _en (например: image1_en.jpg)
-5. После обработки каждой картинки покажи мне результат для проверки</code>
-          <div class="tip" style="margin-top:10px"><span class="tip-i">💡</span><span>Если текст на картинке нечёткий — уточните вручную: «в файле image2.jpg написано: Акция до 31 мая»</span></div>
+- сохрани оригинал без изменений;
+- создай версию с суффиксом _ru;
+- замени только текст, всё остальное сохрани пиксельно близко к оригиналу;
+- не перерисовывай фон/объекты/логотип/цвета/композицию;
+- не добавляй подложки, плашки, прямоугольники, градиенты или декор;
+- удали старый текст аккуратно по маске букв, без размывов, пятен и следов;
+- сохрани шрифт, размер, цвет, жирность, расположение и иерархию максимально близко к исходнику;
+- покажи каждый результат для проверки;
+- в папке оставь только оригиналы и финальные _ru версии.</code>
         </div>
       </div>
       <div class="step">
@@ -370,7 +373,7 @@
         <div class="sbody">
           <div class="stitle">Проверьте и уточните результат</div>
           <div class="sdesc">Просмотрите готовые файлы. Если дизайн или перевод не точный — попросите исправить:</div>
-          <code class="code">В файле image2_en.jpg заголовок должен быть жирным, как в оригинале. Исправь.</code>
+          <code class="code">В файле image2_ru.jpg заголовок должен быть жирным, как в оригинале. Исправь.</code>
         </div>
       </div>
       <div class="step">
@@ -398,8 +401,8 @@
       <div class="task-desc">Переведите картинки с текстом, сохранив оригинальный дизайн, и загрузите на Drive.</div>
       <div class="task-checks" id="checks-4">
         <div class="chk-row"><input type="checkbox" id="c4-1" onchange="saveChecks(4)"><label for="c4-1">Открыл готовую папку с картинками по ссылке из урока</label></div>
-        <div class="chk-row"><input type="checkbox" id="c4-2" onchange="saveChecks(4)"><label for="c4-2">Codex перевёл текст и воссоздал картинки в том же дизайне</label></div>
-        <div class="chk-row"><input type="checkbox" id="c4-3" onchange="saveChecks(4)"><label for="c4-3">Результаты сохранены локально с суффиксом _en</label></div>
+        <div class="chk-row"><input type="checkbox" id="c4-2" onchange="saveChecks(4)"><label for="c4-2">Codex перевёл текст с английского на русский, сохранив дизайн</label></div>
+        <div class="chk-row"><input type="checkbox" id="c4-3" onchange="saveChecks(4)"><label for="c4-3">Результаты сохранены локально с суффиксом _ru</label></div>
         <div class="chk-row"><input type="checkbox" id="c4-4" onchange="saveChecks(4)"><label for="c4-4">Загрузил результат на Google Drive и отправил ссылку</label></div>
       </div>
       <button class="complete-btn" id="complete-4" onclick="completeLesson(4)">Завершить урок →</button>
