@@ -445,19 +445,16 @@
         <div class="snum">2</div>
         <div class="sbody">
           <div class="stitle">Сохраните скилл под именем «collage»</div>
-          <div class="sdesc">Codex создаст файл <strong>collage.md</strong> и сохранит его в папку скиллов. После этого скилл будет доступен по команде <strong>/collage</strong> в любой сессии.</div>
-          <code class="code"><span class="cm"># Имя файла = имя команды:</span>
-collage.md  →  /collage</code>
+          <div class="sdesc">Codex сохранит инструкцию как скилл с именем <strong>collage</strong>. После этого его можно вызывать в любой сессии простой фразой.</div>
         </div>
       </div>
       <div class="step">
         <div class="snum">3</div>
         <div class="sbody">
           <div class="stitle">Запустите скилл в новой сессии</div>
-          <div class="sdesc">Начните <strong>новую сессию</strong> Codex с той же папкой, из которой делали коллаж в уроке 3. Вызовите скилл командой:</div>
-          <code class="code">/collage
-папка: https://drive.google.com/drive/folders/1rxJ7nXsXZDsq_G8fV086KOFMzpHa_Y8F?usp=sharing</code>
-          <div class="sdesc" style="margin-top:8px">Codex выполнит всё по инструкции — без дополнительных объяснений с вашей стороны.</div>
+          <div class="sdesc">Начните <strong>новую сессию</strong> Codex с той же папкой, из которой делали коллаж в уроке 3. Вызовите скилл простой фразой:</div>
+          <code class="code">Используй скилл collage для папки https://drive.google.com/drive/folders/1rxJ7nXsXZDsq_G8fV086KOFMzpHa_Y8F?usp=sharing</code>
+          <div class="sdesc" style="margin-top:8px">Codex найдёт сохранённую инструкцию и выполнит всё по ней — без дополнительных объяснений с вашей стороны.</div>
         </div>
       </div>
     </div>
@@ -471,7 +468,7 @@ collage.md  →  /collage</code>
       <div class="task-checks" id="checks-5">
         <div class="chk-row"><input type="checkbox" id="c5-1" onchange="saveChecks(5)"><label for="c5-1">Попросил Codex создать скилл "collage" по инструкции из урока</label></div>
         <div class="chk-row"><input type="checkbox" id="c5-2" onchange="saveChecks(5)"><label for="c5-2">Скилл сохранён в папке скиллов как collage.md</label></div>
-        <div class="chk-row"><input type="checkbox" id="c5-3" onchange="saveChecks(5)"><label for="c5-3">Запустил /collage в новой сессии с папкой из урока 3</label></div>
+        <div class="chk-row"><input type="checkbox" id="c5-3" onchange="saveChecks(5)"><label for="c5-3">Вызвал скилл «используй скилл collage» в новой сессии</label></div>
         <div class="chk-row"><input type="checkbox" id="c5-4" onchange="saveChecks(5)"><label for="c5-4">Скилл выполнил задачу автоматически, результат получен</label></div>
       </div>
       <button class="complete-btn" id="complete-5" onclick="completeLesson(5)">Завершить урок →</button>
